@@ -1,1 +1,106 @@
 /* Ini css */
+
+/* Section Kiri */
+.main-title {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-content {
+    flex: 1;
+    padding: 12px;
+    
+}
+form {
+    background-color: #e5c1bd;
+    padding: 12px;
+    border-radius: 8px;
+
+}
+
+.input-title { 
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.button {
+    background: aliceblue;
+    border: 2px solid aqua;
+    height: 32px;
+    border-radius: 8px;   
+}
+
+.sumbit {
+    background-color: aquamarine;
+    border: 2px solid aqua;
+}
+
+.reset {
+    background-color: white;
+    border: 2px solid aqua;
+}
+
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+  }
+  
+  input[type=number]:focus {
+    border: 3px solid #555;
+  }
+
+.result-section {
+    text-align-last: center;
+    border-radius: 8px;
+    background-color: #e5c1bd;
+    padding: 12px;
+}
+
+/*Tabel Kategori BMI*/
+.tabel-bmi {
+    width: 100%;
+    text-align: center;
+     
+
+      tr, td {
+        background-color: #e5c1bd; color: rgb(0, 0, 0);
+        border: solid #ddd;
+        padding: 5px;
+      }
+      
+      th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        color: white;
+      }
+
+}
+
+/* General Infornation */
+.article {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.article-content {
+    text-align: center;
+    color: #244fdd;
+}
+
+/* Responsive */
+@media only screen and (max-width: 425px) {
+    main {
+    flex-direction: column;
+    }
+}

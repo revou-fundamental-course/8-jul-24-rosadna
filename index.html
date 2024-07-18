@@ -1,11 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+   <header class="main-title">
+       <h1>Kalkulator BMI</h1>
+   </header>
+
+   <main class="main-content">
+       <!-- Left Content -->
+       <section class="main-content">
+            <!-- Main Article -->
+            <article>
+             <p>Berat badan ideal adalah impian semua orang, namun untuk mendapatkan berat badan ideal kita harus memperhatikan pola hidup yang sehat. Apakah berat badanmu ideal? Yuk, cari tahu untuk menemukan jawabannya!</p>
+            </article> 
+
+            <!-- Form Section--> 
+            <section class="section-form">
+               <form class="form-input" id="bmi-form">
+                   <div>
+                       <div class="input-title">Jenis Kelamin</div>
+
+                       <input type="radio" name="gender" class="kelamin" id="selection-man" value="Laki-Laki"><label for="laki-laki">Laki-Laki</label>
+                       <input type="radio" name="gender" class="kelamin" id="selection-woman" value="Perempuan"><label for="perempuan">Perempuan</label>
+                   </div>
+                   <br>
+                   <div>
+                       <label for="input-berat-badan" class="input-title">Berat Badan (kg)</label>
+                       <input type="number" id="input-berat-badan" required>
+                   </div>
+                   <div>
+                        <label for="input-usia" class="input-title">Usia (th)</label>
+                        <input type="number" id="input-usia" required>
+                   </div>
+                   <div>
+                       <label for="input-tinggi-badan" class="input-title">Tinggi Badan (cm)</label>
+                       <input type="number" id="input-tinggi-badan" required>
+                   </div>
+                   <div>
+                       <button type="submit" class="button-submit">Sumbit</button>
+                       <button type="reset" id="reset-button">Reset</button>
+                   </div>
+                </form>
+            </section>
+
+        <!-- Form Article -->
+        <section>
+            <header>
+                <h1>Keunggulan Fitur</h1>
+            </header>
+            <article>
+                <p> 
+                  <br> 1. Mengetahui berat badan ideal atau tidak
+                  <br> 2. Dapat dijadikan media untuk memantau kondisi berat badan.
+                  <br> 3. Memberikan gambaran untuk mempersiapkan program penurunan atau penaikan berat badan.
+                  <br> 
+                  <br> Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M2.</br>
+                </p>
+            </article>
+        </section> 
+       </section>
+
+       <!-- Right Content -->
+       <section class="main-content">
+            <!-- Result Article -->
+            <article>
+               <header>
+                 <h1>Hasil</h1>
+               </header>
+            </article>
     
+           <!-- Result Section -->
+           <section class="result-section">
+               <p>BMI Anda Adalah</p>
+               <h2 class="hasil-bmi">0.0</h2>
+               <p>Anda masuk ke kategori:</p>
+               <h3 class="kategori-bmi"></h3>
+           </section> 
+           
+      
+           <!-- Result Article -->
+           <article>
+            <p>
+              <h1>Keterangan Golongan Berat Badan</h1>
+              <table class="tabel-bmi">
+                 <tr>
+                    <td>BMI</td>
+                    <td>Kategori</td>
+                 </tr>
+                 <tr> 
+                    <td><18.5</td>
+                    <td>Kekurangan Berat Badan</td>
+                 </tr>
+                 <tr>
+                   <td>18.5 - 24.9</td>
+                   <td>Normal (Ideal)</td>
+                 </tr>
+                 <tr>
+                   <td>25.0 - 29.9</td>
+                   <td>Kelebihan Berat Badan</td>
+                 </tr>
+                 <tr>        
+                   <td>>30</td>
+                   <td>Kegemukan (Obesitas)</td>
+                 </tr>
+              </table>
+    
+            </article>
+           <!-- General Information -->
+           <section>
+             <p class="article">Mulai Hidup Sehat dari Sekarang!</p>
+             <p>Saatnya mengatur gaya hidup dengan pola makan sehat & olahraga teratur untuk menjaga berat badan ideal yang membuat penampilanmu memikat, serta terhindar dari berbagai risiko penyakit.</p>
+             <p class="article">Artikel terbaru</p>
+             <div class="article-content">
+                <p>Pola Hidup Sehat</p>
+                <p>Olahraga untuk Penurunan dan Penaikan Berat Badan</p>
+                <p>Makanan Sehat</p>
+             </div>
+           </section>   
+       </section>
+    </main> 
+   <script src="js/scripts.js"></script>
 </body>
-</html>
+</html> 
